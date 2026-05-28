@@ -1,6 +1,6 @@
 # Procedural Planet Generator
 
-A real-time 3D planet renderer built with OpenGL and custom GLSL shaders. The planet's terrain — continents, oceans, grasslands, rocky peaks, and snow caps — is generated entirely through shader math, with no pre-built textures or heightmaps. Built as a final project for Oregon State University's Computer Graphics course.
+A real-time 3D planet renderer built with OpenGL and custom GLSL shaders. The planet's continents, oceans, grasslands, rocky peaks, and snow caps are generated entirely through shader math, with no pre-built textures or heightmaps. Built as a final project for Oregon State University's Shaders course.
 
 
 
@@ -40,7 +40,7 @@ The fragment shader determines what each pixel *looks like* based on the data re
 
 ### Shader Configuration (`planet.glib`)
 
-The `.glib` file configures [glman](https://web.engr.oregonstate.edu/~mjb/glman/) (Oregon State's GLSL shader viewer) with uniform slider ranges so the planet's appearance can be tuned interactively at runtime — adjusting continent size, terrain height, noise frequency, snow threshold, and lighting coefficients without recompiling.
+The `.glib` file configures [glman](https://web.engr.oregonstate.edu/~mjb/glman/) (Oregon State's GLSL shader viewer) with uniform slider ranges so the planet's appearance can be tuned interactively at runtime, allowing for adjustments of continent size, terrain height, noise frequency, snow threshold, and lighting coefficients without the need to recompile.
 
 ## Built With
 
@@ -71,4 +71,4 @@ To run the full scene (with animated objects, lighting, and camera controls), co
 
 ## What I Learned
 
-This project was my introduction to thinking about rendering as a pipeline — data flows from the vertex stage to the fragment stage, and design decisions at each step constrain what's possible at the next. Writing the terrain generation logic in the vertex shader and the coloring logic in the fragment shader forced me to think carefully about what data to compute where, what to pass between stages, and how to keep the shader math efficient enough for real-time rendering.
+This project was my introduction to thinking about rendering as a pipeline. Data flows from the vertex stage to the fragment stage, and design decisions at each step constrain what's possible at the next. Writing the terrain generation logic in the vertex shader and the coloring logic in the fragment shader forced me to think carefully about what data to compute where, what to pass between stages, and how to keep the shader math efficient enough for real-time rendering.
