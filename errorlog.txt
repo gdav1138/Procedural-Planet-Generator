@@ -1,0 +1,6 @@
+
+ERROR: 0:60: 'st' : undeclared identifier 
+ERROR: 0:60: '' : compilation terminated 
+ERROR: 2 compilation errors.  No code generated.
+
+
